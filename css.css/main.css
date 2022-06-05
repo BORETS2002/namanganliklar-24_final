@@ -1,0 +1,1010 @@
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(white),
+    to(black)
+  );
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
+}
+/* rubik-regular - latin_cyrillic */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/rubik-v20-latin_cyrillic-regular.woff2") format("woff2"),
+    url("/fonts/rubik-v20-latin_cyrillic-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/rubik-v20-latin_cyrillic-500.woff2") format("woff2"),
+    url("/fonts/rubik-v20-latin_cyrillic-500.woff") format("woff");
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/rubik-v20-latin_cyrillic-700.woff2") format("woff2"),
+    url("/fonts/rubik-v20-latin_cyrillic-700.woff") format("woff");
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""),
+    url("/fonts/rubik-v20-latin_cyrillic-900.woff2") format("woff2"),
+    url("/fonts/rubik-v20-latin_cyrillic-900.woff") format("woff");
+}
+
+body {
+  font-family: "Rubik", "Arial" sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  width: 1240px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.img {
+  vertical-align: middle;
+}
+
+.headr-top {
+  background-color: #f6f6f6;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  color: #7f7f7f;
+}
+.search {
+  width: 255px;
+  outline: none;
+  border: 0;
+}
+.search::-webkit-input-placeholder {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8d8d8d;
+}
+.search::-moz-placeholder {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8d8d8d;
+}
+.search:-ms-input-placeholder {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8d8d8d;
+}
+.search::-ms-input-placeholder {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8d8d8d;
+}
+.search::placeholder {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8d8d8d;
+}
+
+.label-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px 0 13px 6px;
+  background: #ffffff;
+  border-radius: 60px;
+}
+.label-input::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("/images/search.svg");
+  background-repeat: no-repeat;
+}
+
+.headr-top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 30px;
+}
+
+.site-logo {
+  margin-right: 35px;
+  padding: 9px;
+  background: #ffffff;
+  border-radius: 7px;
+}
+.site_logo-link {
+  width: 264px;
+  height: 28px;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #7296ee;
+}
+.headr-top-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.currency-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.curency-item-first-symbol {
+  margin-right: 25px;
+}
+
+.currency-symbol {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.currency-symbol::before {
+  display: block;
+  content: "$";
+  width: 12px;
+  height: 19px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2959ce;
+}
+.currency-symbol-twoo::before {
+  content: "P";
+}
+
+.headr-top-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 25px;
+  margin-left: 247px;
+}
+
+.site-languages {
+  width: 70px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 25px;
+  background: #dce6ff;
+  border-radius: 39px;
+}
+
+.lang-uz {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #ffffff;
+}
+.lang-link {
+  text-decoration: none;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 12px;
+  text-align: center;
+  color: #000000;
+}
+.lang-link-ru {
+  font-family: "Rubik";
+  font-style: normal;
+  margin-right: 13px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-decoration: none;
+  color: #a6a6a6;
+}
+.login-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 13px 20px;
+  width: 89px;
+  height: 45px;
+  background: #7296ec;
+  border-radius: 10px;
+}
+.login {
+  width: 49px;
+  height: 19px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #ffffff;
+}
+/* HR chiziqgacha tugadi */
+/* <!-- HEADER END -->
+
+<!-- MAIN START -->
+*/
+.rek-img {
+  margin: 40px 0 50px 0;
+}
+.one-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 60px;
+}
+.one-li {
+  width: 393px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 20px 17px 15px;
+  background: #f6f6f6;
+  border-radius: 15px;
+}
+.one-li:nth-child(3) {
+  margin-right: 0;
+}
+.one-li:nth-child(6) {
+  margin-right: 0;
+}
+.one-li-big {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+.one-li-small {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4a4b4c;
+}
+.time-text {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #5e5f61;
+}
+.time-text::before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  margin-right: 10px;
+  background-image: url("/images/german-ikon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.text-min {
+  margin-right: 5px;
+}
+.text-min-twoo::before {
+  background-image: url("/images/bugdoy-ikon.png");
+}
+.text-min-three::before {
+  background-image: url("/images/x+ikon.png");
+}
+.text-min-foor::before {
+  background-image: url("/images/ayfon-ikon.png");
+}
+.text-min-five::before {
+  background-image: url("/images/l_ikon.png");
+}
+.text-min-six::before {
+  background-image: url("/images/oq_ikon.png");
+}
+/*  BIRINCHI SECTION TUGADI */
+.knop {
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  padding: 24px 71px 24px 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-image: url("/phonto_retene/bgimg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Хотите-div {
+  width: 404px;
+}
+.Хотите {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+}
+.Включит {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  outline: none;
+  border: 0;
+  padding: 13px 30px;
+  background: #f78b3b;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.мире {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+}
+/* IKKINCHI SECTION BOSHLANDI */
+.centr-ul {
+  margin: 0;
+
+  padding: 0;
+  list-style: none;
+}
+.list-ul-main {
+  width: 797px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  list-style: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  padding: 20px;
+  background: #f6f6f6;
+  border-radius: 15px;
+}
+.sec-imagn {
+  width: 210px;
+  height: 165px;
+  border-radius: 10px;
+}
+.our-text {
+  margin-left: 15px;
+}
+.black-text {
+  width: 535px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+.li-mini-text {
+  font-family: "Rubik";
+  margin: 0;
+  margin-bottom: 17px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4a4b4c;
+}
+.mini-fot-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #5e5f61;
+}
+.fot-text {
+  margin-right: 5px;
+}
+.mini-fot-text::before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  margin-right: 10px;
+  background-image: url("/images/german-ikon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.mini-fot-text-twoo::before {
+  background-image: url("/phonto_retene/ikon-T4.png");
+}
+.mini-fot-text-trhee::before {
+  background-image: url("/phonto_retene/tog.png");
+}
+.mini-fot-text-foor::before {
+  background-image: url("/phonto_retene/oxirgisi.jpg");
+}
+
+.in-section {
+  width: 393px;
+  background: #f6f6f6;
+  border-radius: 15px;
+  padding: 20px 20px 25px 17px;
+}
+.section-ul-three {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ul-three-li-one {
+  margin: 0;
+}
+.thing {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+.ul-three-li-h3 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.mini-fot-text-none {
+  margin-bottom: 20px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #5e5f61;
+}
+.line {
+  margin: 20px 0;
+}
+.chegrma {
+  width: 393px;
+  height: 318px;
+  margin-top: 10px;
+  background: url(image.png);
+  border-radius: 15px;
+}
+.section-main-bosss {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.section-main {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+/* ikta sectionni yonma yon qoyish un */
+
+/* IKKINCHI  SECTION TUGADI */
+
+.see {
+  outline: none;
+  width: 796px;
+  border: 0;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  padding: 17px 0;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background: #eaeaea;
+  border-radius: 10px;
+}
+
+/* FOOTER BOSHLANDI */
+
+.footer-head_start {
+  width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-sentr-and-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.footer-boss {
+  margin-top: 100px;
+  background: #7297ef;
+}
+
+.containerfoter {
+  width: 1040px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.footer-text-one {
+  width: 230px;
+}
+
+.teks {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 15px;
+}
+.footer-text {
+  width: 190px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 43px;
+  margin-right: 100px;
+  margin-left: 168px;
+
+  padding: 0;
+}
+.footer-link {
+  margin-bottom: 20px;
+}
+.footer-link-two {
+  margin-bottom: 30px;
+}
+.footer-hypertext-two {
+  margin-right: 12px;
+}
+.footer-hypertext {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer-end-text {
+  list-style: none;
+  width: 187px;
+  height: 136px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.footer-end-text-two {
+  list-style: none;
+  width: 224px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.footer-end-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer-end-lin-blin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-right: 40px;
+}
+.footer-end-hypertext {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.footer-doun {
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer-doun-tex {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.footer-doun-link {
+  list-style: none;
+}
+.footer-doun-cet-link {
+  font-family: "Rubik";
+  font-style: normal;
+  width: 161px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+/* 2-PAGS BOSHLANDI */
+.two-chegrma {
+  width: 393px;
+  height: 553px;
+}
+.mini-fot-text-one::before {
+  background-image: url("/page-two.img/qungiroq-icon.png");
+}
+.mini-fot-text-two::before {
+  background-image: url("/page-two.img/image\ 4.png");
+}
+.mini-fot-text-for::before {
+  background-image: url("/page-two.img/sariq-qora-icon.png");
+}
+.mini-fot-text-five::before {
+  background-image: url("/page-two.img/i-icon.png");
+}
+
+.mini-fot-text-six::before {
+  background-image: url("/page-two.img/ko-icon.png");
+}
+.mini-fot-text-three-sevn::before {
+  background-image: url("/page-two.img/fe-ikon.png");
+}
+
+/* 3PAGS BOSHLANDI */
+.section-main-threepags {
+  margin-top: 50px;
+}
+/* .centr-ul {
+} */
+
+.list-ul-main-three {
+  background: #fff;
+  margin-bottom: 0;
+  padding-left: 0;
+  border-top: 15px;
+  padding-bottom: 10px;
+
+  border-radius: 0;
+}
+.list-ul-main-one {
+  padding: 0;
+}
+.list-ul-main-two {
+  padding: 0;
+  margin-top: 36px;
+}
+.list-ul-main:nth-child(9) {
+  margin-bottom: 40px;
+}
+
+.three-sec-big-text {
+  margin: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 36px;
+  color: #000000;
+}
+.Илон {
+  margin: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.вашим {
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.three-mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.link-mini {
+  width: 393px;
+  margin-right: 27px;
+  padding: 20px 18px;
+  background: #f6f6f6;
+  border-radius: 15px;
+}
+.mini-teks {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.mini-fot-text-pags-for::before {
+  background-image: url("/images/ayfon-ikon.png");
+}
+.mini-fot-text-pags-five::before {
+  background-image: url("/images/l_ikon.png");
+}
+.mini-fot-pags-six::before {
+  background-image: url("/images/oq_ikon.png");
+}
